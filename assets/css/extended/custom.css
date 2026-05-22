@@ -1,0 +1,21 @@
+/* Override PaperMod 預設版面寬度 */
+/* 預設 main=720px / nav=1024px，閱讀區太窄 */
+
+:root {
+    --main-width: 960px;    /* 內容區（文章、列表）*/
+    --nav-width: 1200px;    /* 頂部 nav / 頁尾，建議 >= main */
+}
+
+/* 字體按比例縮小（PaperMod 預設略大）*/
+
+body {
+    font-size: 16px;        /* 預設 18px，瀏覽器標準是 16 */
+}
+
+/* 文章內文 markdown 標題層級 */
+.post-content h1 { font-size: 28px; }    /* 預設 40 */
+.post-content h2 { font-size: 24px; }    /* 預設 32 */
+.post-content h3 { font-size: 20px; }    /* 預設 24 */
+
+/* 文章列表上的文章標題卡片 */
+.post-entry .entry-header h2 { font-size: 22px; }
