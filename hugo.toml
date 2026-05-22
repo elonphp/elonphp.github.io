@@ -1,0 +1,51 @@
+baseURL = "https://elonphp.github.io/"
+locale = "zh-tw"
+defaultContentLanguage = "zh-tw"
+title = "我的學習筆記"
+theme = "PaperMod"
+buildFuture = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  style = "github-dark"
+  lineNos = false
+  codeFences = true
+
+[params]
+  mainSections = ["posts"]    # 告訴 PaperMod 首頁要列哪個 section 的文章
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "嗨，我是 elonphp"
+    Content = "這裡放我寫程式、踩坑、學東西的心得。歡迎隨意翻閱。"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/elonphp"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:elonphp@gmail.com"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "標籤"
+  url = "/tags/"
+  weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
