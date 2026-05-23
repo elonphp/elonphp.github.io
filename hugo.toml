@@ -14,7 +14,7 @@ buildFuture = true
   codeFences = true
 
 [params]
-  mainSections = ["posts"]    # 告訴 PaperMod 首頁要列哪個 section 的文章
+  mainSections = ["posts", "ocadmin"]    # 告訴 PaperMod 首頁要列哪些 section 的文章
   defaultTheme = "auto"
   ShowReadingTime = true
   ShowShareButtons = false
@@ -40,6 +40,12 @@ buildFuture = true
   name = "文章"
   url = "/posts/"
   weight = 10
+
+[[menu.main]]
+  identifier = "ocadmin"
+  name = "OCAdmin"
+  url = "/ocadmin/"
+  weight = 15
 
 [[menu.main]]
   identifier = "tags"
