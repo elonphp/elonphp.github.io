@@ -18,3 +18,6 @@ Thumbs.db
 CLAUDE.md
 CLAUDE.local.md
 .claude/
+
+# Hugo server hot-reload 暫存檔
+*.tmp.*

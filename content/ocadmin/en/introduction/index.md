@@ -9,7 +9,7 @@ build:
   list: local
 ---
 
-> [→ 繁體中文版](/ocadmin/2026-05-24-introduction/)
+> [→ 繁體中文版](/ocadmin/introduction/)
 
 This is the first article in the **OCAdmin series**. I'll start by explaining what OCAdmin is and why it looks the way it does. Later articles will dive into individual modules and design decisions.
 
