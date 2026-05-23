@@ -2,7 +2,7 @@
 title: "OCAdmin (English)"
 description: "Design notes, implementation insights, and decision records for OCAdmin — a Laravel-based admin system inspired by OpenCart's backend."
 build:
-  list: local
+  list: never
 ---
 
 > [→ 繁體中文版](/ocadmin/)
@@ -20,4 +20,14 @@ For technical details (APIs, configuration, CLI commands), please refer to the `
 
 ---
 
-Articles are sorted by date. Each one aims to stand alone — you can pick and choose.
+## Series articles
+
+1. [Introduction: Why I Chose OpenCart Admin as the Design Blueprint](/ocadmin/en/introduction/)
+2. [Overall Architecture: How We Split Portal, Core, and Module — and Why](/ocadmin/en/architecture/)
+3. [Multilingual Mechanism: Three Independent Layers — UI, URL, and Content](/ocadmin/en/multilingual/)
+4. [Naming Conventions: Singular/Plural (Horizontal) and Cross-Layer Alignment (Vertical)](/ocadmin/en/naming/)
+5. [Permission Mechanism: Four-Segment Naming, Role Design, and Prefix Decoupling](/ocadmin/en/permissions/)
+
+---
+
+Each post is designed to stand alone — pick whichever interests you, or start with #1 if this is your first visit.

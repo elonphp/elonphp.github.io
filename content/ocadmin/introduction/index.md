@@ -4,6 +4,7 @@ date: 2026-05-24T14:00:00+08:00
 draft: false
 tags: ["OCAdmin", "OpenCart", "Laravel", "後台設計"]
 categories: ["OCAdmin"]
+weight: 1
 summary: "OCAdmin 是我用 Laravel 重寫的管理系統，但 UI 結構直接借用 OpenCart 後台。為什麼不從零自己刻、不用 WordPress、不用 AdminLTE？這篇講選擇的理由。"
 ---
 

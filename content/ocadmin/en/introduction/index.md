@@ -4,6 +4,7 @@ date: 2026-05-24T14:00:00+08:00
 draft: false
 tags: ["OCAdmin", "OpenCart", "Laravel", "Admin Design"]
 categories: ["OCAdmin"]
+weight: 1
 summary: "OCAdmin is a management system I rebuilt with Laravel, but its UI structure is borrowed directly from OpenCart's admin panel. Why not build it from scratch, use WordPress, or AdminLTE? This post explains the reasoning."
 build:
   list: local
