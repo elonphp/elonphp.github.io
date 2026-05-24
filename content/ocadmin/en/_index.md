@@ -22,13 +22,16 @@ For technical details (APIs, configuration, CLI commands), please refer to the `
 
 ## Series articles
 
-1. [Introduction: Why I Chose OpenCart Admin as the Design Blueprint](/ocadmin/en/introduction/)
+1. [OCAdmin Introduction: A Laravel-Based Admin Inspired by OpenCart](/ocadmin/en/introduction/)
 2. [Overall Architecture: How We Split Portal, Core, and Module — and Why](/ocadmin/en/architecture/)
 3. [Multilingual Mechanism: Three Independent Layers — UI, URL, and Content](/ocadmin/en/multilingual/)
 4. [Naming Conventions: Singular/Plural (Horizontal) and Cross-Layer Alignment (Vertical)](/ocadmin/en/naming/)
 5. [Permission Mechanism: Four-Segment Naming, Role Design, and Prefix Decoupling](/ocadmin/en/permissions/)
 6. [Settings Mechanism: What You Need to Solve Once Settings Live in the DB](/ocadmin/en/settings/)
 7. [Menu Mechanism: Permission Filtering, Structural Independence, and Two Approaches (Code / DB)](/ocadmin/en/menu/)
+8. [Layered Architecture: Two Independent Axes — Business Divergence vs Data Orchestration](/ocadmin/en/layered-architecture/)
+9. [OrmHelper: Replacing Endless `if`s with a Naming Convention](/ocadmin/en/ormhelper/)
+10. [DevLogin: A Login Shortcut for CLI / Postman / AI Agents](/ocadmin/en/dev-login/)
 
 ---
 

@@ -1,16 +1,18 @@
 ---
-title: "OCAdmin Introduction: Why I Chose OpenCart Admin as the Design Blueprint"
+title: "OCAdmin Introduction: A Laravel-Based Admin Inspired by OpenCart"
 date: 2026-05-24T14:00:00+08:00
 draft: false
 tags: ["OCAdmin", "OpenCart", "Laravel", "Admin Design"]
 categories: ["OCAdmin"]
 weight: 1
-summary: "OCAdmin is a management system I rebuilt with Laravel, but its UI structure is borrowed directly from OpenCart's admin panel. Why not build it from scratch, use WordPress, or AdminLTE? This post explains the reasoning."
+summary: "OCAdmin is a backend management system I rebuilt with Laravel, with its UI structure borrowed from OpenCart's admin panel. This is the series entry-point: what it is, who it's for, how it differs from alternatives like WordPress / AdminLTE, and what later posts in the series will cover."
 build:
   list: local
 ---
 
 > [→ 繁體中文版](/ocadmin/introduction/)
+
+> **GitHub repo**: [elonphp/laravel-ocadmin](https://github.com/elonphp/laravel-ocadmin)
 
 This is the first article in the **OCAdmin series**. I'll start by explaining what OCAdmin is and why it looks the way it does. Later articles will dive into individual modules and design decisions.
 
@@ -19,6 +21,32 @@ This is the first article in the **OCAdmin series**. I'll start by explaining wh
 In a nutshell: **a backend system written in Laravel, with its UI structure copied from OpenCart's admin panel**.
 
 It's not a fork of OpenCart, nor an OpenCart plugin. It's a project built from scratch on Laravel that simply borrows OpenCart's admin design blueprint — what list pages look like, which tabs an edit page has, where buttons go — so I don't have to re-think these UI details for every new project.
+
+## Quick start
+
+```bash
+# 1. Clone + install dependencies
+git clone https://github.com/elonphp/laravel-ocadmin.git
+cd laravel-ocadmin
+composer install
+cp .env.example .env
+
+# 2. Edit .env to configure DB connection (DB_DATABASE / DB_USERNAME / DB_PASSWORD)
+
+# 3. Generate APP_KEY, create tables, and seed sample data
+php artisan key:generate
+php artisan migrate:fresh --seed
+
+# 4. Start the server
+php artisan serve
+```
+
+Visit `http://localhost:8000/admin`. Default admin credentials:
+
+- **Email**: `admin@example.com`
+- **Password**: `123456`
+
+`migrate:fresh --seed` wipes and rebuilds the DB with seeded sample data (including super_admin / editor / viewer test roles) — convenient for exploring ACL behavior.
 
 ## Why OpenCart, and not something else
 

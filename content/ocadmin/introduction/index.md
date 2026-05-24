@@ -1,14 +1,16 @@
 ---
-title: "OCAdmin 介紹：為什麼選 OpenCart 後台作為設計藍本"
+title: "OCAdmin 介紹：Laravel 寫的 OpenCart 風格後台"
 date: 2026-05-24T14:00:00+08:00
 draft: false
 tags: ["OCAdmin", "OpenCart", "Laravel", "後台設計"]
 categories: ["OCAdmin"]
 weight: 1
-summary: "OCAdmin 是我用 Laravel 重寫的管理系統，但 UI 結構直接借用 OpenCart 後台。為什麼不從零自己刻、不用 WordPress、不用 AdminLTE？這篇講選擇的理由。"
+summary: "OCAdmin 是我用 Laravel 重寫的後台管理系統，UI 結構借用 OpenCart 後台。這篇是系列入門：解釋它是什麼、誰會用、跟 WordPress / AdminLTE 等其他選項的差異、後續系列文章會涵蓋哪些主題。"
 ---
 
 > [English version →](/ocadmin/en/introduction/)
+
+> **GitHub repo**：[elonphp/laravel-ocadmin](https://github.com/elonphp/laravel-ocadmin)
 
 這是 **OCAdmin 系列**的第一篇。先解釋「OCAdmin 是什麼」「為什麼長這樣」，後續再展開各個模組與設計決策。
 
@@ -17,6 +19,32 @@ summary: "OCAdmin 是我用 Laravel 重寫的管理系統，但 UI 結構直接�
 簡單講：**Laravel 寫的後台系統，但 UI 結構照搬 OpenCart 後台**。
 
 不是 fork OpenCart，也不是 OpenCart 的 plugin。它是從零用 Laravel 蓋起來的專案，只是把 OpenCart 後台那套「列表頁長什麼樣、編輯頁有哪些 tab、按鈕放哪裡」當作 UI 設計藍本，避免每個專案都從零思考這些 UI 細節。
+
+## 快速上手
+
+```bash
+# 1. clone + 裝 dependencies
+git clone https://github.com/elonphp/laravel-ocadmin.git
+cd laravel-ocadmin
+composer install
+cp .env.example .env
+
+# 2. 編輯 .env 設定資料庫連線（DB_DATABASE / DB_USERNAME / DB_PASSWORD）
+
+# 3. 產生 APP_KEY、建表 + 灌入範例資料
+php artisan key:generate
+php artisan migrate:fresh --seed
+
+# 4. 啟動 server
+php artisan serve
+```
+
+訪問 `http://localhost:8000/admin`，預設管理員帳號：
+
+- **帳號**：`admin@example.com`
+- **密碼**：`123456`
+
+`migrate:fresh --seed` 會清空 DB 重建、灌入範例資料（含 super_admin / editor / viewer 三種測試角色），方便上手探索 ACL 行為。
 
 ## 為什麼是 OpenCart，不是別的
 
