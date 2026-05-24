@@ -10,7 +10,7 @@ summary: "OCAdmin 不是新框架，而是 Laravel + 一套架構約定。最重
 
 > [English version →](/ocadmin/en/architecture/)
 
-[首篇](/ocadmin/introduction/)講了 OCAdmin **為什麼借 OpenCart 後台的 UI 設計**。這篇講**底層怎麼組織程式碼**——Portal、Core、Modules 三層架構的設計脈絡。
+OCAdmin **底層怎麼組織程式碼**——Portal、Core、Modules 三層架構的設計脈絡。
 
 ## 1. 先說清楚：底座是 Laravel
 

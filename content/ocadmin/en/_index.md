@@ -27,6 +27,8 @@ For technical details (APIs, configuration, CLI commands), please refer to the `
 3. [Multilingual Mechanism: Three Independent Layers — UI, URL, and Content](/ocadmin/en/multilingual/)
 4. [Naming Conventions: Singular/Plural (Horizontal) and Cross-Layer Alignment (Vertical)](/ocadmin/en/naming/)
 5. [Permission Mechanism: Four-Segment Naming, Role Design, and Prefix Decoupling](/ocadmin/en/permissions/)
+6. [Settings Mechanism: What You Need to Solve Once Settings Live in the DB](/ocadmin/en/settings/)
+7. [Menu Mechanism: Permission Filtering, Structural Independence, and Two Approaches (Code / DB)](/ocadmin/en/menu/)
 
 ---
 

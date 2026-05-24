@@ -24,6 +24,8 @@ description: "我以 Laravel 開發的 OpenCart 管理系統 — 設計脈絡、
 3. [多語機制：介面、網址、內容三層獨立設計](/ocadmin/multilingual/)
 4. [命名規範：橫向單複數 + 縱向階層對齊](/ocadmin/naming/)
 5. [權限機制：四段式命名、角色設計、Prefix 解耦](/ocadmin/permissions/)
+6. [參數設定機制：把設定放進 DB 後，需要解決的幾件事](/ocadmin/settings/)
+7. [選單機制：權限過濾、結構獨立、Code/DB 雙方案](/ocadmin/menu/)
 
 ---
 

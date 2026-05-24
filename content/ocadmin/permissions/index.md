@@ -10,7 +10,7 @@ summary: "OCAdmin 的權限機制建在 Spatie Permission 之上，但加了幾�
 
 > [English version →](/ocadmin/en/permissions/)
 
-前面幾篇講了 [整體架構](/ocadmin/architecture/) 與 [多語機制](/ocadmin/multilingual/)。這篇講**權限**——OCAdmin 的角色與權限怎麼命名、怎麼檢查、為什麼這樣設計。
+OCAdmin 的角色與權限怎麼命名、怎麼檢查、為什麼這樣設計。
 
 ## 1. 不重新發明：用 Spatie Permission 當底座
 
